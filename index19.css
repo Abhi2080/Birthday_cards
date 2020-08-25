@@ -1,0 +1,84 @@
+* {  
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster', cursive;
+  }
+  
+  html, body {
+      background-image: url(./IMG_20200526_224101.jpg);
+    width: 100%;
+    height: 100%;
+  }
+  
+  .wrapper{
+    /* background: #f5f1da; */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card{
+    background: white;
+    width: 650px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #e3dfb9;
+    /*元件置中position+transform設定*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    /*overflow溢出:當內容超過設定範圍時，就hidden。scroll捲動*/
+  }
+  
+  .container {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+  
+  .title {
+    color: #ba7967;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 55pt;
+    width: 650px; 
+    /*給予該文字超過半個container的寬度，讓他可以不要斷行*/
+    z-index: 99;
+    /*z-index數字越大，物件排序越前面*/
+  }
+  
+  .price {
+    color: brown;
+    margin-top: 35px;
+    margin-left: 50px;
+    font-size: 22pt;
+  }
+  
+  .content {
+    margin-top: 10px;
+    margin-left: 50px;
+    color: #ba7967;
+    width: 250px;
+  }
+  
+  .btn {
+    margin-left: 50px;
+    margin-top: 35px;
+    background: #ba7967;
+    border-radius: 10px 0 10px 0 ;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+  /*ahref連結屬於inline屬性，所以margin不能作用*/
+  }
